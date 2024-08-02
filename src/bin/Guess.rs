@@ -3,7 +3,6 @@ use rand::Rng;
 use std::cmp::Ordering;
 fn main(){
     let secret_number = rand::thread_rng().gen_range(1..101);
-    println!("{secret_number}");
     println!("Number Kanipettu Mawa");
     loop{
         let mut guess = String::new();
