@@ -3,8 +3,10 @@ fn main(){
   let mut str= String::new();
   println!("Enter The String");
   io::stdin().read_line(&mut str).expect("Failed TO Read");
+  let strs = &str[0..10];
   let str = string_parser(&str);
-  print!("{str}");
+ 
+  print!("{str},{strs}");
 }
 
 fn string_parser (str:&String) -> &str {
