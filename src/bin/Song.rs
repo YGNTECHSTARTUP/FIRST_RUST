@@ -5,12 +5,12 @@ fn main(){
    
     let mut script = String::from("");
     for i in 0..12 {
-        println!("\n On The {} day of Christmas",days[i]);
+        println!("\nOn The {} day of Christmas",days[i]);
         println!("My true love gave to me");
        let  str =   daysingular[i].to_owned() + " "  + choros[i] + "\n";
        
         script = format!("{}{}",str,script);
         
-        println!("{}",script);
+        println!("{}",script.trim());
     }
 }
