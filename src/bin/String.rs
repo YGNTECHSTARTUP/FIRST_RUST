@@ -9,6 +9,7 @@ fn main(){
 
 fn string_parser (str:&String) -> &str {
    let bytes = str.as_bytes();
+   println!("{:?}",bytes);
    for (i,&item) in bytes.iter().enumerate(){
     println!("On Index {} the Byte is {}",i,item);
     if item == 32 {
